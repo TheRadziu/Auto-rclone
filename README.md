@@ -9,6 +9,7 @@ Simple bash script to autorotate the service accounts using vanilla rclone. When
 Download `auto-rclone.sh` and edit those lines:  
 `SOURCE="Your source:"` with source remote,  
 `DESTINATION="Your destination:"` with destination remote,  
+`/usr/bin/rclone --config="/rclone/config/location/path/rclone.conf" \` with path to your config, remove this argument if you dont need custom config location,  
 `--drive-service-account-file "/service/accounts/path/$COUNTER.json" \` with path to the directory with Service Account json files, leaving `/$COUNTER.json` at the end
 
 Optional changes you can make:  
